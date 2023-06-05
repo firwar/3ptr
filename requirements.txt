@@ -1,0 +1,4 @@
+PyAutoGUI==0.9.53
+PyAutoGUI==0.9.54
+pyperclip==1.8.2
+snscrape==0.6.2.20230321.dev32+gb76f485
