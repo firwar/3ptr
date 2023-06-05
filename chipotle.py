@@ -6,19 +6,13 @@ import pyautogui
 import pyperclip
 
 x_box_pos = -555
-y_box_pos = 1033 
+y_box_pos = 1033
+interval_s = 1
 
 def prompt():
     pyautogui.click(x_box_pos,y_box_pos)
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press('enter')
-
-def prompt2():
-    pyautogui.click(527,994)
-    pyautogui.hotkey('ctrl', 'v')
-    pyautogui.press('enter')
-
-
 
 # Creating list to append tweet data to                                                                  
 tweets_list1 = []
@@ -51,7 +45,7 @@ while(True):
         
         tweets_list1.append([tweet.date, tweet.id, tweet.rawContent, tweet.user.username])
     
-    time.sleep(2.5)
+    time.sleep(interal_s)
     print("Running...")
 
 # -555 1033
